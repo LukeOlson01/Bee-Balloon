@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 401315797351934759}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0.1955, y: -0.317, z: -0.63}
+  m_LocalPosition: {x: 0.1955, y: -0.317, z: 0}
   m_LocalScale: {x: 0.9, y: 0.9, z: 0.6518334}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -156,7 +156,7 @@ Transform:
   m_GameObject: {fileID: 1294610781758813447}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.19539726, y: 0.563082, z: -0.6322769}
+  m_LocalPosition: {x: 0.19539726, y: 0.563082, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -242,6 +242,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 672929956364143273}
+  - component: {fileID: 5142867030240645501}
+  - component: {fileID: 5631816581077238365}
   m_Layer: 0
   m_Name: Balloon
   m_TagString: Untagged
@@ -266,3 +268,38 @@ Transform:
   - {fileID: 7345426270280336254}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!136 &5142867030240645501
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4227760002374197490}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.5
+  m_Height: 1.4
+  m_Direction: 1
+  m_Center: {x: 0.18, y: 0.38, z: 0}
+--- !u!114 &5631816581077238365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4227760002374197490}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a1d08b84b7066b4e80a9caa62b922c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
