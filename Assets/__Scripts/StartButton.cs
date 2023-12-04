@@ -18,7 +18,9 @@ public class StartButton : MonoBehaviour
 
     private void SpawnFantasyBee()
     {
-        Instantiate(FantasyBee);
+        Vector3 cursorPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        cursorPosition.z = 1f;
+        Instantiate(FantasyBee, cursorPosition, Quaternion.identity);
         gameObject.SetActive(false);
     }
 }

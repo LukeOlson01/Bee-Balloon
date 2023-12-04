@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class FantasyBee : MonoBehaviour
 {
-    
-
     // Update is called once per frame
     void Update()
     {
