@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class Balloon : MonoBehaviour
 {
+    
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("FantasyBee"))
         {
             Destroy(gameObject);
+            Main.balloonCount--;
         }
     }
 }

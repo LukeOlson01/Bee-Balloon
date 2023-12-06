@@ -10,6 +10,7 @@ public class RedZone : MonoBehaviour
         if (other.CompareTag("FantasyBee"))
         {
             Destroy(other.gameObject);
+            Main.lives--;
             StartButton.SetActive(true);
         }
     }

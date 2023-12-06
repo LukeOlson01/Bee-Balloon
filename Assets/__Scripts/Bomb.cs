@@ -11,6 +11,7 @@ public class Bomb : MonoBehaviour
         {
             Destroy(other.gameObject);
             Destroy(gameObject);
+            Main.lives--;
             StartButton.SetActive(true);
         }
     }

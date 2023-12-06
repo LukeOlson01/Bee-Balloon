@@ -4,10 +4,14 @@ using UnityEngine;
 
 public class FantasyBee : MonoBehaviour
 {
-    // Update is called once per frame
+    public float moveSpeed = 5f;
+
     void Update()
     {
-        Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        transform.position = new Vector3(mousePosition.x, mousePosition.y, transform.position.z);
+        Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        mousePos.y -= 0.5f;
+        mousePos.z = 1f;
+
+        transform.position = Vector3.MoveTowards(transform.position, mousePos, moveSpeed * Time.deltaTime);
     }
 }
