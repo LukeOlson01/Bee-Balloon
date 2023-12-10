@@ -11,6 +11,7 @@ public class Balloon : MonoBehaviour
         {
             Destroy(gameObject);
             Main.balloonCount--;
+            Score.score++;
         }
     }
 }
