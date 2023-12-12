@@ -17,6 +17,14 @@ public class Lives : MonoBehaviour
     void Update()
     {
         text.text = "Lives: " + Main.lives;
+        if (Level.level == 4)
+        {
+            text.color = Color.black;
+        }
+        else
+        {
+            text.color = Color.white;
+        }
     }
 }
 

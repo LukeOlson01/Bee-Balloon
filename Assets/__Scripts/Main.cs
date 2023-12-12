@@ -84,6 +84,7 @@ public class Main : MonoBehaviour
     private void startLevel()
     {
         lives = 3;
+        Level.level++;
     }
 
     private void SetPlayerPrefs()

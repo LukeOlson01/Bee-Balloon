@@ -2047,7 +2047,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1444205185449882248, guid: c1b201865a89f8a43a3f6b11f5189462, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.79
+      value: -5.92
       objectReference: {fileID: 0}
     - target: {fileID: 1444205185449882248, guid: c1b201865a89f8a43a3f6b11f5189462, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2084,6 +2084,14 @@ PrefabInstance:
     - target: {fileID: 1444205185449882248, guid: c1b201865a89f8a43a3f6b11f5189462, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5918863736232972418, guid: c1b201865a89f8a43a3f6b11f5189462, type: 3}
+      propertyPath: endPos.x
+      value: 5.93
+      objectReference: {fileID: 0}
+    - target: {fileID: 5918863736232972418, guid: c1b201865a89f8a43a3f6b11f5189462, type: 3}
+      propertyPath: endPos.z
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5918863736232972418, guid: c1b201865a89f8a43a3f6b11f5189462, type: 3}
       propertyPath: StartButton

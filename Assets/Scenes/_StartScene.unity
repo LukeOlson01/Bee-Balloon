@@ -193,7 +193,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Created by Allan Jones and Luke Olsen
+  m_Text: Created by Allan Jones and Luke Olson
 --- !u!222 &112946674
 CanvasRenderer:
   m_ObjectHideFlags: 0

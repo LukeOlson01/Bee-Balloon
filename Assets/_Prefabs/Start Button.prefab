@@ -213,4 +213,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbd242978dfd7c34c8a1378a720afd74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  FantasyBee: {fileID: 1046869630431942, guid: c717f817a496cf247a92b830b355a407, type: 3}
+  FantasyBeePrefab: {fileID: 1046869630431942, guid: c717f817a496cf247a92b830b355a407, type: 3}

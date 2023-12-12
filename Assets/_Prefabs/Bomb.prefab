@@ -390,4 +390,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e746101ca7656c9498df179d642554e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StartButton: {fileID: 6014717291678587307, guid: 7524cec80d9684547bff4b069f2c3905, type: 3}
+  StartButton: {fileID: 0}

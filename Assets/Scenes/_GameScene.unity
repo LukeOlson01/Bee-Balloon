@@ -747,6 +747,8 @@ MonoBehaviour:
   levels:
   - levelPrefab: {fileID: 7818892508651563495, guid: 2315571f154fd0e44b2f8055f25235d6, type: 3}
   - levelPrefab: {fileID: 3239426868779856138, guid: ef44f8f8b85c4d54fb60416af2776bcd, type: 3}
+  - levelPrefab: {fileID: 6237146011472821824, guid: 76a18395a8a9ed74290a06d3d6a4ad1f, type: 3}
+  - levelPrefab: {fileID: 3652431892066421202, guid: a8491ccbb2bb3f24abc8e846be36e5c7, type: 3}
 --- !u!1 &1313698976
 GameObject:
   m_ObjectHideFlags: 0

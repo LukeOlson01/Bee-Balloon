@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class FantasyBee : MonoBehaviour
 {
-    public float moveSpeed = 5f;
+    public float moveSpeed = 10f;
 
     void Update()
     {
