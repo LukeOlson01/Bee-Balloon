@@ -36,14 +36,30 @@ public class Main : MonoBehaviour
             }
             else
             {
-                // All levels completed (you can handle this as needed)
-                Debug.Log("All levels completed!");
+                // All levels completed, set player data and load end scene
+                SetPlayerPrefs();
+                LoadEndScene();
             }
+        }
+
+        // Check if lives are zero
+        if (lives <= 0)
+        {
+            // Lives are zero, set player data and load end scene
+            SetPlayerPrefs();
+            LoadEndScene();
         }
     }
 
     private void LoadLevel()
     {
+        // Destroy previous FantasyBee
+        GameObject previousFantasyBee = GameObject.FindWithTag("FantasyBee");
+        if (previousFantasyBee != null)
+        {
+            Destroy(previousFantasyBee);
+        }
+
         // Destroy previous level objects
         GameObject[] previousBalloons = GameObject.FindGameObjectsWithTag("Balloon");
         foreach (GameObject balloon in previousBalloons)
@@ -65,10 +81,27 @@ public class Main : MonoBehaviour
 
 
 
-
     private void startLevel()
     {
         lives = 3;
     }
+
+    private void SetPlayerPrefs()
+    {
+        // Set player data in PlayerPrefs
+        PlayerPrefs.SetInt("FinalScore", Score.score);
+        PlayerPrefs.SetInt("FinalLives", lives);
+        PlayerPrefs.SetFloat("FinalTimeRemaining", Timer.timeRemaining);
+        // Optionally, you might want to set other player data here
+    }
+
+    private void LoadEndScene()
+    {
+        // Load the "_endscene"
+        SceneManager.LoadScene("_EndScene");
+    }
 }
+
+
+
 
