@@ -49,6 +49,14 @@ public class Main : MonoBehaviour
             SetPlayerPrefs();
             LoadEndScene();
         }
+
+        //Check if time is out
+        if (Timer.timeRemaining < 1)
+        {
+            //Time is out, set player data and load end scene
+            SetPlayerPrefs();
+            LoadEndScene();
+        }
     }
 
     private void LoadLevel()
