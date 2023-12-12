@@ -10,7 +10,7 @@ public class Lives : MonoBehaviour
     void Start()
     {
         text = GetComponent<Text>();
-        
+
     }
 
     // Update is called once per frame
@@ -19,3 +19,4 @@ public class Lives : MonoBehaviour
         text.text = "Lives: " + Main.lives;
     }
 }
+

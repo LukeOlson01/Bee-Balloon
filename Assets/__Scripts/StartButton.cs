@@ -5,7 +5,9 @@ using UnityEngine.UI;
 
 public class StartButton : MonoBehaviour
 {
-    public GameObject FantasyBee;
+    public GameObject FantasyBeePrefab;
+
+    private GameObject spawnedBee;
 
     private void Start()
     {
@@ -18,9 +20,18 @@ public class StartButton : MonoBehaviour
 
     private void SpawnFantasyBee()
     {
+        // Destroy the previously spawned FantasyBee
+        if (spawnedBee != null)
+        {
+            Destroy(spawnedBee);
+        }
+
         Vector3 cursorPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         cursorPosition.z = 1f;
-        Instantiate(FantasyBee, cursorPosition, Quaternion.identity);
+        spawnedBee = Instantiate(FantasyBeePrefab, cursorPosition, Quaternion.identity);
         gameObject.SetActive(false);
     }
 }
+
+
+

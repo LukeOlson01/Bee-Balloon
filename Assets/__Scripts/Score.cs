@@ -19,3 +19,4 @@ public class Score : MonoBehaviour
         text.text = "Score: " + score;
     }
 }
+
